@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Roboto:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+
+@*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    html{
+    height: 100%;
+    }
+
+body{
+    
+    background-color: #F8EDDD;
+    font-family: 'Nunito Sans', sans-serif;
+     
+    }
+
+    .grid_container{
+    display: grid;
+        grid-template: 
+                 "header" 125px
+                 "barra"  25px 
+                 "main"  auto
+                 "sidebar" 100px
+                 "footer" 25px  ;
+                                
+                    }
+
+                .header{
+                 grid-area: header;
+                margin-top: 15px;
+                padding-top: 10px;
+                background-color: white;
+                        }
+
+.logo{
+        width: 100px;
+        height: 100px;
+            
+            background-image: url(../img/logo.jpg);
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+            margin: auto;
+            padding: auto;
+            
+                
+    }
+
+    .social{
+        width: 25px;
+        height: 25px;
+            
+            background-image: url(../img/fb.png);
+            background-color: #ffffff;
+           background-repeat: no-repeat;
+           margin: auto;
+           
+            
+                
+    }
+
+        .barra{
+
+                width: auto;
+                 background-color: #5e4a35;
+                    height: 25px;
+            }
+
+
+        .main{
+            
+            grid-area: main;
+             background-color: #F8EDDD;
+
+            }
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #F8EDDD;
+
+        }
+
+
+        .titulo{
+        
+            text-align: center;
+            font-size: 25px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+    .titulo2{
+        
+            text-align: center;
+            font-size: 20px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 15px 100px 15px 100px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+        
+ .titulo3{
+            
+            text-align: center;
+            font-size: 18px;
+
+            font-family: 'Nunito', bold;
+            width: 18%;
+
+        height: auto;
+        padding: 15px;
+        margin: auto;
+     
+                
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 45px;
+                
+                }
+
+        .titulo4{
+            
+            text-align: center;
+            font-size: 18px;
+
+            font-family: 'Nunito', bold;
+            width: 18%;
+
+        height: auto;
+        padding: 15px;
+        margin: auto;
+     
+                
+                color: white;
+                border-radius: 15px 100px 15px 100px;
+                background-color: #F9AD58 ;
+                background-size: 45px;
+                
+                }
+
+
+
+   .fotos{
+           width: auto;
+        height: 200px;
+        margin: auto;
+    background-color: #ffffff;
+    background-image: url(../img/desayuno3.jpg);
+        border-radius: 15px;
+        background-repeat: no-repeat;
+
+    }
+
+ .fotos2{
+           width: 280px;
+    height: 280px;
+    background-color: #ffffff;
+    margin-top: 10px; 
+
+    /*background-image: url(../img/tipo.jpg);*/
+    background-repeat: no-repeat;
+    
+    align-content: center;
+    margin: auto;
+    
+
+    }
+   
+  .fotos3{
+      width: 300px;
+        height: auto;
+       /* margin: auto;*/
+    background-color: #ffffff;
+    
+        
+        margin-top: 10px;
+        background-repeat: no-repeat;
+        margin: auto;
+    
+
+    }
+   
+    .boton{
+        
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        }
+
+
+          
+
+     form{
+
+        width: auto;
+        padding: 20px;
+            margin:auto;
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;
+            text-align: center;
+
+        }
+
+     textarea{
+   
+            width: 45%;
+            height: 90px;
+            margin-top: 10px;
+            }
+ 
+
+
+footer{
+    grid-area: footer;
+    background-color: #5e4a35;
+    height: 40px;
+}
+
+.web{
+
+    text-align: center;
+    font-size: 15px;
+    font-family: roboto;
+        color: grey;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+     .txtweb{
+        color: grey;
+        text-decoration: none;
+    }
+
+
+
+
+        .fondo{
+             width: auto;
+             height: 600px;
+     
+            margin:auto;
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;
+           
+
+    }
+
+
+@media (min-width: 600px) {
+
+    .grid_container{
+
+        grid-template: 
+        "header     header"     125px 
+        "barra      barra"      25px auto
+        "main       main"     auto
+        "sidebar    sidebar"   auto  
+        "footer     footer"     auto /
+         auto      auto;
+    }
+
+.logo{
+        width: 100px;
+        height: 100px;
+            
+            background-image: url(../img/logo.jpg);
+            background-color: #ffffff;
+            margin: auto;
+            padding: auto;
+                
+    }
+
+
+.barra{
+
+   width: auto;
+    background-color: #5e4a35;
+    height: 25px;
+}
+
+
+        .titulo{
+        
+            text-align: center;
+            font-size: 25px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+ .titulo2{
+        
+            text-align: center;
+            font-size: 20px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 15px 100px 15px 100px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+.titulo3{
+            
+            text-align: center;
+            font-size: 20px;
+
+            font-family: 'Nunito', bold;
+            width: 22%;
+
+        height: auto;
+        padding: 10px;
+        margin-left: 60px;
+     
+                
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                float: left;
+                }
+
+        .titulo4{
+            
+            text-align: center;
+            font-size: 20px;
+
+            font-family: 'Nunito', bold;
+            width: 22%;
+
+        height: auto;
+        padding: 10px;
+        margin-left: 60px;
+     
+                
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                float: right;
+                }
+
+
+
+ .fotos{
+        width: 200px;
+        height: 480px;
+       /* margin: auto;*/
+    background-color: #ffffff;
+    background-image: url(../img/desayuno2.jpg);
+        border-radius: 15px;
+        margin-top: 45px;
+        padding: 20px;
+        margin-left: 20px;
+        
+        background-repeat: no-repeat;
+        float: right;
+
+    }
+
+
+
+ .fotos2{
+           width: 270px;
+    height: 420px;
+    background-color: #ffffff;
+    margin-top: 10px; 
+
+    /*background-image: url(../img/2.jpg);*/
+    background-repeat: no-repeat;
+    
+    float: left;
+    
+
+    }
+
+
+      .fotos3{
+      width: 305px;
+        height: 380px;
+       /* margin: auto;*/
+    background-color: #ffffff;
+    /*background-image: url(../img/pantable.jpg);*/
+        
+        margin-top: 10px;
+        background-repeat: no-repeat;
+        float: right;
+    
+
+    }
+
+
+              
+
+     .boton{
+        
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        }
+
+      /*    .nuez{
+
+        width: 100px;
+        height: 100px;
+         margin: auto;
+
+    }*/
+
+    form{
+
+        width: auto;
+        height: auto;
+        padding: 80px;
+            
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;  
+
+
+        }
+
+     textarea{
+   
+            width: 25%;
+            height: 90px;
+            margin-top: 10px;
+
+            }
+
+
+}
+
+.web{
+
+    text-align: center;
+    font-size: 15px;
+    font-family: roboto;
+        color: grey;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+     .txtweb{
+        color: grey;
+        text-decoration: none;
+    }
+
+  .fondo{
+             width: auto;
+             height: 500px;
+     
+            margin:auto;
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;
+           
+
+    }
+
+   
+
+
+@media (min-width: 900px) {
+    .grid_container{
+       
+        grid-template: 
+       
+        "header     header"     125px 
+        "barra      barra"      25px  auto
+        "main       main"       auto
+        "sidebar    sidebar"    100px 
+        "footer     footer"     25px /
+         auto      auto;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+            
+            background-image: url(../img/logo.jpg);
+            background-color: #ffffff;
+            margin: auto;
+            padding: auto;
+                
+    }
+
+    .barra{
+
+   width: auto;
+    background-color: #5e4a35;
+    height: 25px;
+}
+
+
+
+  .titulo{
+        
+            text-align: center;
+            font-size: 25px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+    .titulo2{
+        
+            text-align: center;
+            font-size: 20px;
+
+            font-family: 'Nunito', bold;
+            width: 99%;
+
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     
+                display: inline-block;
+                color: white;
+                border-radius: 15px 100px 15px 100px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                }
+
+                .titulo3{
+            
+            text-align: center;
+            font-size: 25px;
+
+            font-family: 'Nunito', bold;
+            width: 25%;
+
+        height: auto;
+        padding: 10px;
+        margin-left: 60px;
+     
+                
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                float: left;
+                }
+
+        .titulo4{
+            
+            text-align: center;
+            font-size: 25px;
+
+            font-family: 'Nunito', bold;
+            width: 25%;
+
+        height: auto;
+        padding: 10px;
+        margin-left: 60px;
+     
+                
+                color: white;
+                border-radius: 100px 15px 100px 15px;
+                background-color: #F9AD58 ;
+                background-size: 50px;
+                float: right;
+                }
+
+
+
+   .fotos{
+        width: 500px;
+        height: 480px;
+       /* margin: auto;*/
+    background-color: #ffffff;
+    background-image: url(../img/desayuno1.jpg);
+        border-radius: 15px;
+        margin-top: 45px;
+        padding: 20px;
+        margin-left: 50px;
+        
+        background-repeat: no-repeat;
+        float: left;
+
+    }
+
+    .fotos2{
+           width: 450px;
+    height: 420px;
+    background-color: #ffffff;
+    margin-top: 10px; 
+
+    /*background-image: url(../img/tipo.jpg);*/
+    background-repeat: no-repeat;
+    
+    float: left;
+    
+
+    }
+
+
+      .fotos3{
+      width: 350px;
+        height: 200px;
+       /* margin: auto;*/
+    background-color: #ffffff;
+    /*background-image: url(../img/1.jpg);*/
+        border-radius: 15px;
+        margin-top: 45px;
+        padding: 20px;
+        margin-left: 5px;
+        
+        background-repeat: no-repeat;
+        float: right;
+    
+
+    }
+
+
+
+     .boton{
+        
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        }
+
+
+     
+
+       form{
+
+        width: auto;
+        height: 400px;
+        padding: 80px;
+            
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;
+    
+            
+
+        }
+
+     textarea{
+   
+            width: 25%;
+            height: 90px;
+            margin-top: 10px;
+
+            }
+ 
+ .web{
+
+    text-align: center;
+    font-size: 15px;
+    font-family: roboto;
+        color: grey;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+     .txtweb{
+        color: grey;
+        text-decoration: none;
+    }
+
+   footer{
+    grid-area: footer;
+    background-color: #5e4a35;
+    height: 40px;
+    clear: both;
+}
+
+
+
+        .fondo{
+             width: auto;
+             height: 500px;
+     
+            margin:auto;
+            margin-top: 20px;
+            background-color: #ffffff;
+            color:black;
+            border-radius: 15px;
+            font-size: 15px;
+           
+
+    }
+
+
+
+
+
+
+}
+
+
+
